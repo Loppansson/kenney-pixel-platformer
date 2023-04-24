@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cuepwim0e2h87"]
+[gd_scene load_steps=6 format=3 uid="uid://cuepwim0e2h87"]
 
 [ext_resource type="Script" path="res://addons/platformer controller/platformer_controller.gd" id="1_uilka"]
 [ext_resource type="SpriteFrames" uid="uid://4ghv1il2ogtm" path="res://player/player_frames.tres" id="2_5up57"]
+[ext_resource type="Script" path="res://player/wrap.gd" id="2_jec3u"]
 [ext_resource type="Script" path="res://player/animations.gd" id="2_yvxiq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d8ii7"]
@@ -10,6 +11,9 @@ size = Vector2(14, 16.5)
 [node name="Player" type="CharacterBody2D"]
 texture_filter = 1
 script = ExtResource("1_uilka")
+
+[node name="Wrap" type="Node" parent="."]
+script = ExtResource("2_jec3u")
 
 [node name="Animations" type="Node" parent="."]
 script = ExtResource("2_yvxiq")
