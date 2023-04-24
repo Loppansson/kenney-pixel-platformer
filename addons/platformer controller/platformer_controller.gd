@@ -1,5 +1,4 @@
 extends CharacterBody2D
-
 class_name PlatformerController2D
 
 signal jumped(is_ground_jump: bool)

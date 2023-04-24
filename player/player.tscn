@@ -28,3 +28,8 @@ flip_h = true
 visible = false
 position = Vector2(0, -10.25)
 shape = SubResource("RectangleShape2D_d8ii7")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_top = 0
+limit_bottom = 270
+position_smoothing_enabled = true
