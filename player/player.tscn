@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://dymr07qiibblx"]
+
+[ext_resource type="Script" path="res://platformer controller/platformer_controller.gd" id="1_un2nx"]
+[ext_resource type="SpriteFrames" uid="uid://4ghv1il2ogtm" path="res://player/player_frames.tres" id="2_5up57"]
+[ext_resource type="Script" path="res://player/animations.gd" id="2_yvxiq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d8ii7"]
+size = Vector2(14, 16.5)
+
+[node name="Player" type="CharacterBody2D"]
+texture_filter = 1
+script = ExtResource("1_un2nx")
+
+[node name="Animations" type="Node" parent="."]
+script = ExtResource("2_yvxiq")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -12)
+sprite_frames = ExtResource("2_5up57")
+animation = &"walk_left"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -10.25)
+shape = SubResource("RectangleShape2D_d8ii7")
