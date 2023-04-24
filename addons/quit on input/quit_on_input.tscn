@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://qil8fir5khaa"]
+
+[ext_resource type="Script" path="res://addons/quit on input/quit_on_input.gd" id="1_0crvv"]
+
+[node name="QuitOnInput" type="Node"]
+script = ExtResource("1_0crvv")
